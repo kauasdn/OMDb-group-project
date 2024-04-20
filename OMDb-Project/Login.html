@@ -3,12 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="CSS/Register.css" />
+    <link rel="stylesheet" href="CSS/Login.css" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Khmer:wght@400&display=swap"
     />
-    <title>Register</title>
+    <title>Login</title>
   </head>
   <body>
     <div class="background">
@@ -20,11 +20,14 @@
         </div>
         <div class="loginregister">
           <div class="entrar">
-            <a href="Login.html" class="entrar1" id="entrarText">Entrar</a>
+            <div class="entrar1" id="entrarText">Entrar</div>
           </div>
           <div class="cadastro">
-            <div class="register"></div>
-            <div class="cadastro1">Cadastro</div>
+            <div class="register">
+              <a href="Register.html" class="cadastro1" id="cadastroText"
+                >Cadastro</a
+              >
+            </div>
           </div>
         </div>
         <form class="form">
@@ -37,15 +40,6 @@
               required
             />
           </div>
-          <div class="email-container">
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="E-Mail"
-              required
-            />
-          </div>
           <div class="password-container">
             <input
               type="password"
@@ -54,30 +48,31 @@
               placeholder="Senha"
               required
             />
-          </div>
-          <div class="confirmpassword-container">
-            <input
-              type="password"
-              id="confirmpassword"
-              name="confirmpassword"
-              placeholder="Confirme sua senha"
-              required
-            />
             <span
               class="show-password-btn"
-              onclick="togglePasswordVisibility('confirmpassword')"
+              onclick="togglePasswordVisibility('password')"
               ><img class="showpswd-icon" alt="" src="Images/Show Pass.png"
             /></span>
           </div>
-          <button class="registerbtn" type="submit">Cadastrar</button>
+          <div class="rememberpswd">
+            <input
+              type="checkbox"
+              id="rememberPassword"
+              name="rememberPassword"
+            />
+            <label for="rememberPassword">Lembrar senha</label>
+          </div>
+          <button class="loginbtn" type="submit">Entrar</button>
         </form>
         <div class="bottom-line"></div>
-        <div class="alreadyamember" id="alreadyamember">
-          <span>Já é membro?</span>
-          <a href="Login.html" class="alreadyamemberlink"> Entre aqui</a>
+        <div class="forgotpswd" id="forgotpswd">
+          <a href="forgotpassword.html" class="forgotpswdlink">
+            Esqueceu sua senha?</a
+          >
         </div>
-        <div class="terms">
-          Ao criar uma conta você concorda com os termos de uso.
+        <div class="notamember" id="notamember">
+          <span>Ainda não é um membro?</span>
+          <a href="Register.html" class="notamemberlink"> Cadastre-se aqui</a>
         </div>
       </div>
     </div>

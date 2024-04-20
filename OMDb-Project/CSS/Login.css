@@ -47,7 +47,7 @@ body {
   justify-content: space-between;
 }
 
-.cadastro {
+.entrar {
   border-radius: 15px;
   background: linear-gradient(-90deg, #4b6eeb, #00e5d5);
   border: 1px solid #00e5d5;
@@ -62,7 +62,7 @@ body {
   cursor: default;
 }
 
-.entrar {
+.cadastro {
   width: 52%;
   height: 100%;
   display: flex;
@@ -72,7 +72,7 @@ body {
   font-size: 24px;
 }
 
-.entrar1 {
+.cadastro1 {
   text-decoration: none;
   color: inherit;
 }
@@ -112,7 +112,6 @@ body {
 }
 
 .user-container,
-.email-container,
 .password-container {
   width: 75%;
   height: 57px;
@@ -122,13 +121,11 @@ body {
   background-color: #29252b;
   border: 1px solid #1c1a1d;
   box-sizing: border-box;
-  margin-top: 39px;
+  margin-top: 94px;
 }
 
 .user-container input,
-.email-container input,
-.password-container input,
-.confirmpassword-container input {
+.password-container input {
   width: 100%;
   height: 100%;
   background-color: transparent;
@@ -139,7 +136,7 @@ body {
   margin-left: 15px;
 }
 
-.confirmpassword-container {
+.password-container {
   width: 75%;
   height: 57px;
   position: relative;
@@ -159,10 +156,41 @@ body {
   cursor: pointer;
 }
 
-.registerbtn {
+.rememberpswd {
+  margin-top: 14px;
+  display: flex;
+  align-items: center;
+  width: 75%;
+}
+
+.rememberpswd input[type="checkbox"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  border: 2px solid #00e5d5;
+  border-radius: 4px;
+  margin-right: 10px;
+  cursor: pointer;
+  outline: none;
+  margin-right: 10px;
+}
+
+.rememberpswd input[type="checkbox"]:checked {
+  background-color: #00e5d5;
+}
+
+.rememberpswd label {
+  font-size: 14px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.loginbtn {
   width: 75%;
   height: 57px;
-  margin-top: 58px;
+  margin-top: 50px;
   position: relative;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 15px;
@@ -180,31 +208,22 @@ body {
   border-top: 1px solid #8f8f8f;
   box-sizing: border-box;
   height: 1px;
-  margin: 19px 0 19px 0;
+  margin: 102px 0 23px 0;
 }
 
-.alreadyamember {
+.forgotpswd,
+.notamember {
   position: relative;
   font-size: 16px;
   color: #fff;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   cursor: default;
 }
 
-.alreadyamemberlink {
+.forgotpswdlink,
+.notamemberlink {
   text-decoration: none;
   color: #4b6deb;
-}
-
-.terms {
-  position: relative;
-  font-size: 10px;
-  line-height: 120%;
-  font-family: Khula;
-  color: #fff;
-  text-align: justify;
-  display: inline-block;
-  cursor: default;
 }
 
 @media screen and (max-width: 600px) {
