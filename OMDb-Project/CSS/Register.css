@@ -1,0 +1,215 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Khmer;
+}
+
+.background {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(0deg, #211e22 0%, #211e22 100%);
+  background-image: url(../Images/RegisterBG.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.container {
+  width: 506px;
+  height: 80%;
+  position: relative;
+  opacity: 0.83;
+  background: #211e22;
+  box-shadow: 0px 2vw 2vw rgba(0, 0, 0, 0.25);
+  border-radius: 2vw;
+  border: 2px #00e5d5 solid;
+  backdrop-filter: blur(1vw);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.loginregister {
+  width: 75%;
+  height: 57px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  background-color: #211e22;
+  border: 1px solid #00e5d5;
+  margin-top: 70px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cadastro {
+  border-radius: 15px;
+  background: linear-gradient(-90deg, #4b6eeb, #00e5d5);
+  border: 1px solid #00e5d5;
+  box-sizing: border-box;
+  width: 52%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 24px;
+  cursor: default;
+}
+
+.entrar {
+  width: 52%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #8f8f8f;
+  font-size: 24px;
+}
+
+.entrar1 {
+  text-decoration: none;
+  color: inherit;
+}
+
+.logo-child {
+  top: 0px;
+  left: 0px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  background-color: #232124;
+  border: 2px solid #00e5d5;
+  box-sizing: border-box;
+  width: 80px;
+  height: 80px;
+}
+
+.logo-icon {
+  position: absolute;
+  top: 18px;
+  left: 18px;
+  width: 45px;
+  height: 45px;
+  object-fit: cover;
+}
+
+.logo {
+  position: absolute;
+  top: -5.5%;
+  margin: auto;
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user-container,
+.email-container,
+.password-container {
+  width: 75%;
+  height: 57px;
+  position: relative;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  background-color: #29252b;
+  border: 1px solid #1c1a1d;
+  box-sizing: border-box;
+  margin-top: 39px;
+}
+
+.user-container input,
+.email-container input,
+.password-container input,
+.confirmpassword-container input {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 24px;
+  margin-left: 15px;
+}
+
+.confirmpassword-container {
+  width: 75%;
+  height: 57px;
+  position: relative;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  background-color: #29252b;
+  border: 1px solid #1c1a1d;
+  box-sizing: border-box;
+  margin-top: 39px;
+  display: flex;
+  align-items: center;
+}
+
+.showpswd-icon {
+  margin-right: 15px;
+  margin-top: 8px;
+  cursor: pointer;
+}
+
+.registerbtn {
+  width: 75%;
+  height: 57px;
+  margin-top: 58px;
+  position: relative;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  background: linear-gradient(90deg, #00e5d5, #8f00ff);
+  box-sizing: border-box;
+  height: 59px;
+  font-size: 24px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.bottom-line {
+  width: 30%;
+  position: relative;
+  border-top: 1px solid #8f8f8f;
+  box-sizing: border-box;
+  height: 1px;
+  margin: 19px 0 19px 0;
+}
+
+.alreadyamember {
+  position: relative;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 10px;
+  cursor: default;
+}
+
+.alreadyamemberlink {
+  text-decoration: none;
+  color: #4b6deb;
+}
+
+.terms {
+  position: relative;
+  font-size: 10px;
+  line-height: 120%;
+  font-family: Khula;
+  color: #fff;
+  text-align: justify;
+  display: inline-block;
+  cursor: default;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    height: 90%;
+    max-width: 400px;
+  }
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/Register.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Khmer:wght@400&display=swap"
+    />
+    <title>Register</title>
+  </head>
+  <body>
+    <div class="background">
+      <div class="container">
+        <div class="logo">
+          <div class="logo-child">
+            <img class="logo-icon" alt="" src="Images/RegisterLogo.png" />
+          </div>
+        </div>
+        <div class="loginregister">
+          <div class="entrar">
+            <a href="login.html" class="entrar1" id="entrarText">Entrar</a>
+          </div>
+          <div class="cadastro">
+            <div class="register"></div>
+            <div class="cadastro1">Cadastro</div>
+          </div>
+        </div>
+        <form class="form">
+          <div class="user-container">
+            <input
+              type="text"
+              id="username"
+              name="username"
+              placeholder="Nome do Usuário"
+              required
+            />
+          </div>
+          <div class="email-container">
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="E-Mail"
+              required
+            />
+          </div>
+          <div class="password-container">
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Senha"
+              required
+            />
+          </div>
+          <div class="confirmpassword-container">
+            <input
+              type="password"
+              id="confirmpassword"
+              name="confirmpassword"
+              placeholder="Confirme sua senha"
+              required
+            />
+            <span
+              class="show-password-btn"
+              onclick="togglePasswordVisibility('confirmpassword')"
+              ><img class="showpswd-icon" alt="" src="Images/Show Pass.png"
+            /></span>
+          </div>
+          <button class="registerbtn" type="submit">Cadastrar</button>
+        </form>
+        <div class="bottom-line"></div>
+        <div class="alreadyamember" id="alreadyamember">
+          <span>Já é membro?</span>
+          <a href="login.html" class="alreadyamemberlink"> Entre aqui</a>
+        </div>
+        <div class="terms">
+          Ao criar uma conta você concorda com os termos de uso.
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<script>
+  function togglePasswordVisibility(fieldId) {
+    var passwordInput = document.getElementById(fieldId);
+    if (passwordInput.type === "password") {
+      passwordInput.type = "text";
+      togglePasswordIcon(true);
+    } else {
+      passwordInput.type = "password";
+      togglePasswordIcon(false);
+    }
+  }
+
+  function togglePasswordIcon(showPassword) {
+    var icon = document.querySelector(".showpswd-icon");
+    if (showPassword) {
+      icon.src = "Images/Hide Pass.png";
+    } else {
+      icon.src = "Images/Show Pass.png";
+    }
+  }
+</script>
