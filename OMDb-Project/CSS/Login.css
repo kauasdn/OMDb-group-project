@@ -239,3 +239,9 @@ body {
     max-width: 400px;
   }
 }
+
+@media screen and (max-height: 800px) {
+  .bottom-line{
+    margin: 1vw 0 20px 0;
+  }
+}
