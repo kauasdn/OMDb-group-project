@@ -1,0 +1,83 @@
+.input-with-image {
+    position: relative;
+    display: inline-block;
+}
+
+.input-with-image input {
+    padding-left: 40px;
+    /* Adapte o valor conforme necessário para acomodar a imagem */
+}
+
+.input-image {
+    position: absolute;
+    left: 10px;
+    /* Ajuste conforme necessário para posicionar a imagem */
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    /* Ajuste o tamanho da imagem conforme necessário */
+    height: auto;
+}
+
+.form-control::placeholder {
+    color: #9F9B9B;
+    /* Defina a cor do texto do placeholder aqui */
+}
+
+img {
+    cursor: pointer;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.paiInput {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    height: 100vh;
+    background-color: #332E34;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(5, 0fr);
+    justify-content: space-around;
+    /* Alinha os itens ao centro */
+    margin-top: 20px;
+    gap: 16px;
+}
+
+.grid-item {
+    height: 300px;
+    width: 160px;
+    background-color: #121013;
+    padding: 10px;
+}
+
+.imagem{
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.imagem img{
+    height: 256px;
+    width: 130px;
+}
+
+.titulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo p{
+    color: white;
+}
