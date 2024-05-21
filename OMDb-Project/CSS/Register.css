@@ -22,7 +22,6 @@ body {
 
 .container {
   width: 506px;
-  height: 80%;
   position: relative;
   opacity: 0.83;
   background: #211e22;
@@ -121,7 +120,7 @@ body {
   background-color: #29252b;
   border: 1px solid #1c1a1d;
   box-sizing: border-box;
-  margin-top: 39px;
+  margin-top: 2vw;
 }
 
 .user-container input,
@@ -147,7 +146,7 @@ body {
   background-color: #29252b;
   border: 1px solid #1c1a1d;
   box-sizing: border-box;
-  margin-top: 39px;
+  margin-top: 2vw;
   display: flex;
   align-items: center;
 }
@@ -193,17 +192,6 @@ body {
 .alreadyamemberlink {
   text-decoration: none;
   color: #4b6deb;
-}
-
-.terms {
-  position: relative;
-  font-size: 10px;
-  line-height: 120%;
-  font-family: Khula;
-  color: #fff;
-  text-align: justify;
-  display: inline-block;
-  cursor: default;
 }
 
 @media screen and (max-width: 600px) {

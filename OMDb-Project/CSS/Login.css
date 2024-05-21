@@ -22,7 +22,6 @@ body {
 
 .container {
   width: 506px;
-  height: 80%;
   position: relative;
   opacity: 0.83;
   background: #211e22;
@@ -120,7 +119,7 @@ body {
   background-color: #29252b;
   border: 1px solid #1c1a1d;
   box-sizing: border-box;
-  margin-top: 94px;
+  margin-top: 4vw;
 }
 
 .user-container input,
