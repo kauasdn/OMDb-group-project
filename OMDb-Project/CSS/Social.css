@@ -72,36 +72,48 @@ body {
     text-align: center;
     margin-top: 20px;
     color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-.container-filme{
-    height: 370px;
-    width: 1800px;
-    background-color: gray;
-    margin: 0 auto;
-    margin-top: 20px;
+.container {
+    display: grid;
+    grid-template-columns: 1fr; /* Uma coluna */
+    grid-auto-rows: 400px; /* Altura automática de 100px para as linhas */
+    gap: 20px; /* Espaçamento entre os itens */
+    width: 100%; /* Largura do container */
+    margin: 0 auto; /* Centraliza o container */
 }
 
-.filme {
-    padding: 22px;
-} 
+.item {
+    background: #696666;
+    color: white; /* Cor do texto branco */
+    line-height: 100px; /* Alinhamento vertical */
+    display: flex;
+    padding: 10px; /* Espaçamento interno */
+  }
 
-.title-filme {
-    color: white;
-    margin-left: 280px;
-    margin-top: -358px;
+.imagem-filme{
+    width: auto; /* Largura automática */
+    height: auto; /* Altura automática */
+    max-width: 100%; /* Largura máxima */
+    margin-right: 20px; /* Espaçamento à direita da imagem */
+  }
+
+.texto-acima{
+    display: flex; /* Utiliza flexbox para alinhar os elementos internos */
+    flex-direction: row; /* Empilha os elementos internamente */
+    align-items: flex-start; /* Alinha os itens à esquerda */
+    flex-grow: 1; /* Ocupa o espaço restante */
 }
 
-.ano-filme{
-    margin-left: 505px;
-    margin-top: -34px;
-    color: white;
+.texto-acima h2 {
+    margin-bottom: 10px; /* Espaçamento inferior */
 }
 
-.line{
-    width: 82.5%;
-    height: 20px;
-    color: white;
-    margin-left: 280px;
+.texto-acima p {
+    font-size: 1rem; /* Tamanho do texto */
+    line-height: 1.4; /* Altura da linha */
 }
-
