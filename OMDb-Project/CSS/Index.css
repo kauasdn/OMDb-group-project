@@ -1,0 +1,69 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Khmer;
+}
+
+.header {
+  height: 63.33vh;
+  background-image: url(../Images/RegisterBG.png);
+  padding: 20px;
+  box-sizing: border-box;
+  color: #E0E0E0;
+  text-align: center;
+}
+
+.name {
+    font-size: 96px;
+  }
+
+.registerbtn {
+  width: 47vw;
+  height: 57px;
+  margin-top: 6vh;
+  position: relative;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  background: linear-gradient(90deg, #00e5d5, #8f00ff);
+  box-sizing: border-box;
+  height: 59px;
+  font-size: 24px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.info {
+  height: 24vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  border-bottom: 10px;
+  border-color: black;
+  background-color: #211E22;
+}
+
+.textoesq {
+  flex: 1;
+  color: #E0E0E0;
+}
+
+.textodir {
+  flex: 1;
+  text-align: right;
+  color: #E0E0E0;
+}
+
+.imagem {
+  max-height: 100%;
+  max-width: 40%; 
+}
+
+@media screen and (max-width: 600px) {
+    .name {
+      font-size: 72px;
+    }
+  }
