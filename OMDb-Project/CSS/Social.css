@@ -14,7 +14,7 @@ body {
     border-radius: 32px;
     transition: border-color 0.3s ease;
   }
-  
+ 
   .nav-item:hover {
     border-color: blue;
   }
@@ -40,7 +40,7 @@ body {
 
 .item {
     background: #696666;
-    color: white; /* Cor do texto branco */
+    color: white;
     display: flex;
     flex-direction: row; /* Alinha a imagem e o texto lado a lado */
     padding: 10px; /* Espaçamento interno */
@@ -70,11 +70,7 @@ body {
     align-items: flex-start; /* Alinha os itens à esquerda */
     justify-content: flex-start; /* Alinha os itens ao topo */
     flex-grow: 1; /* Ocupa o espaço restante */
-    width: 80%;
-}
-
-.texto-acima h2 {
-    margin-bottom: 10px; /* Espaçamento inferior */
+    height: 20%;
 }
 
 .texto-acima p {
@@ -82,4 +78,52 @@ body {
     line-height: 1.4; /* Altura da linha */
     margin-left: 10px;
     margin-top: 14px;
+}
+
+.dirigido{
+    display: flex;
+    align-items: flex-start;
+}
+
+.container-footer{
+    background-color: black;
+    height: 300px;
+    width: 100%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.logo-footer{
+    height: 64px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.logo-footer img{
+    height: 64px;
+    width: 64px;
+    margin-top: 30px;
+    position: absolute;
+}
+
+.direitos{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.direitos p{
+    width: 400px;
+    text-align: center;
+}
+
+.circles{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 256px;
 }
