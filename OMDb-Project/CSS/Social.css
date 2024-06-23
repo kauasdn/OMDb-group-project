@@ -20,38 +20,36 @@ body {
   }
 
 .atualizações{
-    text-align: center;
+    text-align: center;  /* Centraliza o texto horizontalmente */
     margin-top: 20px;
     color: #FFFFFF;
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
+    /* centraliza o conteúdo horizontal e verticalmente */
     align-items: center;
     justify-content: center;
 }
 
+/* Filmes Grid */
 .container {
     display: grid;
-    grid-template-columns: 1fr; /* Uma coluna */
-    grid-auto-rows: 400px; /* Altura automática de 100px para as linhas */
+    grid-template-columns: 1fr; /* colunas da grade para uma unidade fracionária */
+    grid-auto-rows: 400px; /* Define as linhas automáticas da grade para 400px */
     gap: 20px; /* Espaçamento entre os itens */
     width: 100%; /* Largura do container */
-    margin: 0 auto; /* Centraliza o container */
 }
 
-.item {
+.item{
     background: #696666;
     color: white;
     display: flex;
-    flex-direction: row; /* Alinha a imagem e o texto lado a lado */
+    flex-direction: row; /* Define a direção do flex para linha */
     padding: 10px; /* Espaçamento interno */
-    box-sizing: border-box; /* Inclui o padding na altura e largura total */
   }
 
 .image-container{
     display: flex;
-    flex-direction: column;
-    justify-content: left;
-    align-items: flex-start; /* Alinha a imagem ao topo */
+    flex-direction: column; /* Define a direção do flex para coluna */
     margin-right: 20px; /* Espaçamento à direita da imagem */
     height: 100%; /* Altura total do item */
     flex-shrink: 0; /* Evita que o contêiner encolha */
@@ -66,25 +64,47 @@ body {
 
 .texto-acima{
     display: flex; /* Utiliza flexbox para alinhar os elementos internos */
-    flex-direction:row; /* Empilha os elementos internamente em coluna */
     align-items: flex-start; /* Alinha os itens à esquerda */
-    justify-content: flex-start; /* Alinha os itens ao topo */
-    flex-grow: 1; /* Ocupa o espaço restante */
-    height: 20%;
+    justify-content: space-between;
+    flex-grow: 1; /* Espaçamento de 1 */
+    height: 10px; /* Altura */
+    max-width: 100%;    
 }
 
-.texto-acima p {
-    font-size: 1rem; /* Tamanho do texto */
-    line-height: 1.4; /* Altura da linha */
-    margin-left: 10px;
+.year{
     margin-top: 14px;
 }
 
 .dirigido{
-    display: flex;
-    align-items: flex-start;
+    margin-top: 14px;
 }
 
+.informações{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.itens{
+    flex: 1;
+	margin: 5px;
+}
+
+.rating{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.imagem-rating{
+    margin-bottom: 15px;
+}
+
+.reviews{
+    text-align: justify;
+}
+
+/* Footer */
 .container-footer{
     background-color: black;
     height: 300px;
@@ -106,7 +126,7 @@ body {
 .logo-footer img{
     height: 64px;
     width: 64px;
-    margin-top: 30px;
+    margin-top: 30px;  
     position: absolute;
 }
 
@@ -127,3 +147,4 @@ body {
     align-items: center;
     width: 256px;
 }
+
