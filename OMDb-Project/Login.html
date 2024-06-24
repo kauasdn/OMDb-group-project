@@ -13,11 +13,11 @@
   <body>
     <div class="background">
       <div class="container">
-        <div class="logo">
+        <a href="Index.html" class="logo">
           <div class="logo-child">
             <img class="logo-icon" alt="" src="Images/RegisterLogo.png" />
           </div>
-        </div>
+        </a>
         <div class="loginregister">
           <div class="entrar">
             <div class="entrar1" id="entrarText">Entrar</div>
@@ -80,6 +80,7 @@
 </html>
 
 <script>
+  // Script para mostrar e esconder a senha
   function togglePasswordVisibility(fieldId) {
     var passwordInput = document.getElementById(fieldId);
     if (passwordInput.type === "password") {
@@ -91,6 +92,7 @@
     }
   }
 
+  // Script para trocar o ícone ao mostrar e esconder a senha
   function togglePasswordIcon(showPassword) {
     var icon = document.querySelector(".showpswd-icon");
     if (showPassword) {

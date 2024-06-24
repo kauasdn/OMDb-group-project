@@ -9,15 +9,17 @@ body {
 .header {
   height: 63.33vh;
   background-image: url(../Images/RegisterBG.png);
+  background-size: cover;
+  background-repeat: no-repeat;
   padding: 20px;
   box-sizing: border-box;
-  color: #E0E0E0;
+  color: #e0e0e0;
   text-align: center;
 }
 
 .name {
-    font-size: 96px;
-  }
+  font-size: 96px;
+}
 
 .registerbtn {
   width: 47vw;
@@ -41,29 +43,34 @@ body {
   align-items: center;
   padding: 20px;
   box-sizing: border-box;
-  border-bottom: 10px;
-  border-color: black;
-  background-color: #211E22;
+  border-bottom: 1px solid #332E34;
+  background-color: #211e22;
+  overflow: hidden;
 }
 
 .textoesq {
   flex: 1;
-  color: #E0E0E0;
+  color: #e0e0e0;
 }
 
 .textodir {
   flex: 1;
   text-align: right;
-  color: #E0E0E0;
+  color: #e0e0e0;
 }
 
 .imagem {
   max-height: 100%;
-  max-width: 40%; 
+  max-width: 40%;
+  object-fit: contain;
 }
 
 @media screen and (max-width: 600px) {
-    .name {
-      font-size: 72px;
-    }
+  .name {
+    font-size: 72px;
   }
+
+  .imagem{
+    display: none;
+  }
+}
