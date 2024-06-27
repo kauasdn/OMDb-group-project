@@ -36,38 +36,35 @@ body {
     grid-template-columns: 1fr; /* colunas da grade para uma unidade fracionária */
     grid-auto-rows: 400px; /* Define as linhas automáticas da grade para 400px */
     gap: 20px; /* Espaçamento entre os itens */
-    width: 100%; /* Largura do container */
 }
 
 .item{
     background: #696666;
     color: white;
     display: flex;
-    flex-direction: row; /* Define a direção do flex para linha */
+    flex-direction: row; 
     padding: 10px; /* Espaçamento interno */
   }
 
 .image-container{
     display: flex;
-    flex-direction: column; /* Define a direção do flex para coluna */
-    margin-right: 20px; /* Espaçamento à direita da imagem */
-    height: 100%; /* Altura total do item */
+    flex-direction: column; 
+    margin-right: 20px;
+    height: 100%; 
     flex-shrink: 0; /* Evita que o contêiner encolha */
 }
 
 .imagem-filme{
-    width: auto; /* Largura automática */
-    height: 100%; /* Altura total do contêiner da imagem */
-    max-width: 100%; /* Largura máxima */
+    width: auto; 
+    height: 100%; 
     object-fit: contain; /* Mantém a proporção da imagem */
   }
 
 .texto-acima{
-    display: flex; /* Utiliza flexbox para alinhar os elementos internos */
-    align-items: flex-start; /* Alinha os itens à esquerda */
-    justify-content: space-between;
-    flex-grow: 1; /* Espaçamento de 1 */
-    height: 10px; /* Altura */
+    display: flex; 
+    justify-content: flex-start;
+    gap: 8px;
+    height: 10px; 
     max-width: 100%;    
 }
 
@@ -76,7 +73,8 @@ body {
 }
 
 .dirigido{
-    margin-top: 14px;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .informações{
@@ -93,11 +91,10 @@ body {
 .rating{
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 
 .imagem-rating{
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .reviews{
@@ -147,4 +144,3 @@ body {
     align-items: center;
     width: 256px;
 }
-
