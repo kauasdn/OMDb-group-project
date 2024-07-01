@@ -1,108 +1,80 @@
 body {
-    height: 100vh;
-    background-color: #332E34;
-}
-
-.navbar-nav{
-    width: 256px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.nav-item {
-    border: 1px solid;
-    border-radius: 32px;
-    transition: border-color 0.3s ease;
-  }
- 
-  .nav-item:hover {
-    border-color: blue;
-  }
-
-.atualizações{
-    text-align: center;  /* Centraliza o texto horizontalmente */
-    margin-top: 20px;
-    color: #FFFFFF;
-    display: flex;
-    flex-direction: column; 
-    /* centraliza o conteúdo horizontal e verticalmente */
-    align-items: center;
-    justify-content: center;
-}
-
-/* Filmes Grid */
-.container {
-    display: grid;
-    grid-template-columns: 1fr; /* colunas da grade para uma unidade fracionária */
-    grid-auto-rows: 400px; /* Define as linhas automáticas da grade para 400px */
-    gap: 20px; /* Espaçamento entre os itens */
-}
-
-.item{
-    background: #696666;
+    background-color: #211E22;
     color: white;
-    display: flex;
-    flex-direction: row; 
-    padding: 10px; /* Espaçamento interno */
+    font-family: Arial, sans-serif;
+}
+
+.title-nav {
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 20px;
+    text-align: center;
+    min-height: 100px;
+    margin: 0 auto;
   }
 
-.image-container{
-    display: flex;
-    flex-direction: column; 
-    margin-right: 20px;
-    height: 100%; 
-    flex-shrink: 0; /* Evita que o contêiner encolha */
-}
-
-.imagem-filme{
-    width: auto; 
-    height: 100%; 
-    object-fit: contain; /* Mantém a proporção da imagem */
+  .title-nav p {
+    font-size: 24px;
+    margin-bottom: 0;
   }
 
-.texto-acima{
-    display: flex; 
-    justify-content: flex-start;
-    gap: 8px;
-    height: 10px; 
-    max-width: 100%;    
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #332E34;
+    border-radius: 8px;
 }
 
-.year{
-    margin-top: 14px;
+.titulo {
+    font-size: 24px;
+    margin-bottom: 0;
 }
 
-.dirigido{
-    display: flex;
-    justify-content: flex-end;
+.subtitulo {
+    font-size: 18px;
+    margin-top: 5px;
 }
 
-.informações{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+.diretor {
+    font-size: 16px;
+    margin: 0;
 }
 
-.itens{
-    flex: 1;
-	margin: 5px;
+.analise {
+    font-size: 16px;
+    margin: 0;
 }
 
-.rating{
-    display: flex;
-    justify-content: space-between;
-}
-
-.imagem-rating{
-    margin-bottom: 10px;
-}
-
-.reviews{
+.texto {
+    font-size: 16px;
     text-align: justify;
+    margin-top: 20px;
 }
 
-/* Footer */
-.container-footer{
+.img-custom {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.img-rating {
+    width: 100px;
+    height: auto;
+}
+
+.img-rating-text {
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+}
+
+footer {
+    background-color: #211e22;
+}
+
+.container-footer {
     background-color: black;
     height: 300px;
     width: 100%;
@@ -113,34 +85,69 @@ body {
     align-items: center;
 }
 
-.logo-footer{
+.logo-footer {
     height: 64px;
     width: 100%;
     display: flex;
     justify-content: center;
 }
 
-.logo-footer img{
+.logo-footer img {
     height: 64px;
     width: 64px;
-    margin-top: 30px;  
+    margin-top: 30px;
     position: absolute;
 }
 
-.direitos{
+.direitos {
     width: 100%;
     display: flex;
     justify-content: center;
 }
 
-.direitos p{
+.direitos p {
     width: 400px;
     text-align: center;
 }
 
-.circles{
+.circles {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 256px;
+}
+
+@media (max-width: 768px) {
+    .titulo {
+        font-size: 20px;
+    }
+
+    .subtitulo {
+        font-size: 16px;
+    }
+
+    .diretor {
+        font-size: 14px;
+    }
+
+    .analise {
+        font-size: 14px;
+    }
+
+    .texto {
+        font-size: 14px;
+    }
+
+    .img-rating {
+        width: 80px;
+    }
+
+    .img-custom {
+        max-width: 100%;
+    }
+
+    .img-rating-text {
+        width: 1em;
+        height: 1em;
+    }
 }

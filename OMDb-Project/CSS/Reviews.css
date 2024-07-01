@@ -39,15 +39,114 @@ body {
 }
 
 .img-custom {
-    width: 100%; /* Ajuste conforme necessário */
-    max-width: 200px; /* Limite máximo */
+    width: 100%;
+    max-width: 200px;
     height: auto;
     border-radius: 8px;
 }
 
 .img-rating {
-    width: 100px; /* Ajuste conforme necessário */
+    width: 100px;
     height: auto;
+}
+
+.img-rating-text {
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+}
+
+.user-info-container {
+    background-color: #332E34;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.search-bar-container {
+    background-color: #332E34;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.search-input {
+    background-color: #332E34;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.btn-filter {
+    background-color: #555;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+}
+
+.dropdown-menu {
+    background-color: #332E34;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    width: 100%;
+}
+
+.dropdown-menu a {
+    color: white;
+}
+
+.dropdown-menu a:hover {
+    color: #555;
+    background-color: #fff;
+}
+
+footer {
+    background-color: #211e22;
+}
+
+.container-footer {
+    background-color: black;
+    height: 300px;
+    width: 100%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.logo-footer {
+    height: 64px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.logo-footer img {
+    height: 64px;
+    width: 64px;
+    margin-top: 30px;
+    position: absolute;
+}
+
+.direitos {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.direitos p {
+    width: 400px;
+    text-align: center;
+}
+
+.circles {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 256px;
 }
 
 @media (max-width: 768px) {
@@ -72,6 +171,15 @@ body {
     }
 
     .img-rating {
-        width: 80px; /* Ajuste conforme necessário */
+        width: 80px;
+    }
+
+    .img-custom {
+        max-width: 100%;
+    }
+
+    .img-rating-text {
+        width: 1em;
+        height: 1em;
     }
 }
