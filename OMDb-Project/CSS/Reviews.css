@@ -1,6 +1,5 @@
 body {
     background-color: #211E22;
-    color: white;
 }
 
 .container {
@@ -9,6 +8,7 @@ body {
     padding: 20px;
     background-color: #332E34;
     border-radius: 8px;
+    color: white;
 }
 
 .titulo {
