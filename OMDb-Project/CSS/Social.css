@@ -1,7 +1,6 @@
 body {
     background-color: #211E22;
     color: white;
-    font-family: Arial, sans-serif;
 }
 
 .title-nav {
@@ -69,6 +68,22 @@ body {
     height: 1em;
     vertical-align: middle;
 }
+
+.navbar-nav{
+    width: 256px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-item {
+    border: 1px solid;
+    border-radius: 32px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .nav-item:hover {
+    border-color:blue;
+  }
 
 footer {
     background-color: #211e22;

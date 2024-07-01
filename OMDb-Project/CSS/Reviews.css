@@ -1,7 +1,6 @@
 body {
     background-color: #211E22;
     color: white;
-    font-family: Arial, sans-serif;
 }
 
 .container {
@@ -101,6 +100,22 @@ body {
     color: #555;
     background-color: #fff;
 }
+
+.navbar-nav{
+    width: 256px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-item {
+    border: 1px solid;
+    border-radius: 32px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .nav-item:hover {
+    border-color:blue;
+  }
 
 footer {
     background-color: #211e22;
