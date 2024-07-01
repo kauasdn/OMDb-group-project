@@ -62,6 +62,11 @@ body {
   cursor: default;
 }
 
+.entrarh{
+  text-decoration: none;
+  color: white;
+}
+
 .cadastro {
   width: 52%;
   height: 100%;

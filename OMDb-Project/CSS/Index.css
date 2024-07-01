@@ -65,6 +65,53 @@ body {
   object-fit: contain;
 }
 
+footer{
+  background-color: #211e22;
+}
+
+.container-footer{
+  background-color: black;
+  height: 300px;
+  width: 100%;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.logo-footer{
+  height: 64px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.logo-footer img{
+  height: 64px;
+  width: 64px;
+  margin-top: 30px;
+  position: absolute;
+}
+
+.direitos{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.direitos p{
+  width: 400px;
+  text-align: center;
+}
+
+.circles{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 256px;
+}
+
 @media screen and (max-width: 600px) {
   .name {
     font-size: 72px;

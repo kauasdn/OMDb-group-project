@@ -77,6 +77,11 @@ body {
   color: inherit;
 }
 
+.entrarh{
+  text-decoration: none;
+  color: white;
+}
+
 .logo-child {
   top: 0px;
   left: 0px;
